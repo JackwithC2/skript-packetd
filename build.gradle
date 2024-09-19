@@ -24,13 +24,13 @@ repositories {
 
 archivesBaseName = "Skript-Packet"
 group = 'fr.anarchick.skriptpacket'
-version = '2.2.1'
+version = '2.2.2'
 
-def mcVersion = '1.20'
-def mcSubVersion = '.4'
+def mcVersion = '1.21'
+def mcSubVersion = '.1'
 def skriptVersion = '2.8.3'
-def protocolLibVersion = '5.1.0'
-def skriptReflectVersion = '2.4'
+def protocolLibVersion = '5.2.0'
+def skriptReflectVersion = '2.5.1'
 
 def targetJavaVersion = 17
 
@@ -42,7 +42,7 @@ dependencies {
     compileOnly group: 'io.papermc.paper', name: 'paper-api', version: mcVersion + mcSubVersion + '-R0.1-SNAPSHOT'
     paperweight.paperDevBundle(mcVersion + mcSubVersion +'-R0.1-SNAPSHOT')
     compileOnly group: 'net.md-5', name: 'bungeecord-api', version: mcVersion + '-R0.1-SNAPSHOT'
-    compileOnly group: 'com.github.TPGamesNL', name: 'skript-reflect', version: skriptReflectVersion
+    compileOnly group: 'com.github.SkriptLang', name: 'skript-reflect', version: skriptReflectVersion
     compileOnly group: 'org.eclipse.jdt', name: 'org.eclipse.jdt.annotation', version: '2.2.600'
     compileOnly group: 'com.mojang', name: 'datafixerupper', version: '1.0.20' // ExprPair
     compileOnly group: "com.comphenix.protocol", name: "ProtocolLib", version: protocolLibVersion
